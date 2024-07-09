@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Tic-Tac-Toe</h1>
+        <div id="themes">
+            <button class="theme-button" data-theme="light">Light Theme</button>
+            <button class="theme-button" data-theme="dark">Dark Theme</button>
+        </div>
+        <div id="playerNames">
+            <input type="text" id="playerXName" placeholder="Player X Name">
+            <input type="text" id="playerOName" placeholder="Player O Name">
+        </div>
+        <button id="startGame">Start Game</button>
+        <button id="playWithAI">Play with AI</button>
+        <div id="board" class="hidden"></div>
+        <button id="restart" class="hidden">Restart Game</button>
+        <button id="resetScores">Reset Scores</button>
+        <button id="undo" class="hidden">Undo Last Move</button>
+        <button id="toggleSound">Toggle Sound</button>
+        <p id="timer" class="hidden">Time left: <span id="timeLeft">10</span> seconds</p>
+        <p id="message"></p>
+        <p id="playerXScore">Player X Wins: 0</p>
+        <p id="playerOScore">Player O Wins: 0</p>
+        <p id="statistics">Games Played: 0, Wins: 0, Losses: 0, Ties: 0</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
